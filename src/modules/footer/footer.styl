@@ -1,0 +1,42 @@
+.footer
+  padding: 46px 0 44px
+  @media (max-width $breakpoint-sm - 1)
+    text-align: center
+
+  &__left
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 24px
+
+  &__center
+    flex:1
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 24px
+
+  &__right
+    text-align: center
+
+  &__logo
+    display: block
+    background: url(../../img/sprite-logo.svg)
+    margin-bottom: 9px
+    @media (max-width $breakpoint-sm - 1)
+      margin: 0 auto 9px
+
+  &__sublogo
+    font-size: 14px
+    color: #79747C
+
+  &__req
+    margin: 0 48px
+    font-size: 14px
+    line-height: 22px
+    color: #79747C
+
+  &__polytic
+    display: inline-block
+    font-size: 14px
+    color: #861FC0
+    margin-top: 14px
+
+    &:hover
+      text-decoration: underline

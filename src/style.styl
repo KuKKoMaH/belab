@@ -1,0 +1,175 @@
+/*!!
+ * Theme Name: carbody.pro
+ */
+
+@import "owl.carousel/dist/assets/owl.carousel.css";
+@import "magnific-popup/dist/magnific-popup.css";
+//@import "baron/baron.css";
+//@import "bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css";
+//@import "suggestions-jquery/dist/css/suggestions.css";
+//@import "selectize/dist/css/selectize.css";
+
+@import "stylus/_fonts.styl";
+@import "stylus/_vars.styl";
+@import "stylus/_mixins.styl";
+@import "stylus/_grid.styl";
+
+html
+  margin: 0
+  padding: 0
+  font-family: 'SF UI Display', sans-serif;
+  min-height: 100%
+
+body
+  margin: 0
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  //min-height: 100%
+  position: relative
+  //display: flex
+  //flex-direction: column
+  //flex: 1
+  //width: 100%
+
+//::-webkit-scrollbar
+//  width: 0
+
+*, *:before, *:after
+  box-sizing: border-box
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: inherit
+  text-decoration: none
+  //&:hover
+button
+  color: inherit
+
+.title
+  text-align: center
+  font-size: 36px
+  font-weight: 800
+  @media (max-width $breakpoint-sm - 1)
+    font-size: 24px
+    line-height: 1.35
+
+.subtitle
+  text-align: center
+  font-size: 16px
+  line-height: 24px
+  color: #79747c
+  @media (max-width $breakpoint-sm - 1)
+    font-size: 14px
+    line-height: 20px
+
+.convex
+  position: relative
+  &:before, &:after
+    position: absolute
+    width: 100%
+    border-radius: 50%
+    height: 14px
+    z-index: 1
+  &:before
+    top: -7px
+  &:after
+    bottom: -7px
+
+.highlight
+  background: #FFE4B1
+  padding: 0 4px
+
+.btn
+  display: inline-block
+  border-radius: 6px;
+  background: linear-gradient(180deg, #8B24C5 0%, #66009F 100%);
+  height: 48px
+  padding: 0 33px
+  font-size: 16px
+  color: #ffffff
+  font-weight: 800
+  border: 0
+  cursor: pointer
+
+  &--block
+    width: 100%
+    display: block
+
+.input
+  margin-bottom: 13px
+  &__label
+    font-size: 12px
+    color: #79747c
+    display: block
+
+  &__required
+    color: #ff0400
+
+  &__input
+    background: #FFFFFF
+    border-radius: 6px
+    display: block
+    width: 100%
+    border: 0
+    font-size: 16px
+    padding: 15px 18px
+    anim()
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+.hidden
+  display: none
+
+.center-text
+  text-align: center
+
+.screen-reader-response
+  display: none
+
+.wpcf7-not-valid-tip
+  position: absolute
+  font-size: 14px
+  color: red
+  top: 100%
+  margin-top: 4px
+
+.wpcf7-response-output
+  font-size: 15px
+  margin-top: 8px
+  text-align: center
+  color: red
+
+  &.wpcf7-mail-sent-ok
+    color: $green
+
+@import "modules/header/header.styl"
+@import "modules/slide/slide.styl"
+@import "modules/bullets/bullets.styl"
+@import "modules/author/author.styl"
+@import "modules/program/program.styl"
+@import "modules/learn/learn.styl"
+@import "modules/videos/videos.styl"
+@import "modules/results/results.styl"
+@import "modules/programs/programs.styl"
+@import "modules/bonuses/bonuses.styl"
+@import "modules/portfolio/portfolio.styl"
+@import "modules/faq/faq.styl"
+@import "modules/form/form.styl"
+@import "modules/advantages/advantages.styl"
+@import "modules/contacts/contacts.styl"
+@import "modules/questions/questions.styl"
+@import "modules/footer/footer.styl"
+
+
+//@import "modules/catalog/catalog.styl"
+//@import "modules/info/info.styl"
+//@import "modules/delivery/delivery.styl"
+//@import "modules/outpost/outpost.styl"
+//@import "modules/popup/popup.styl"
+//@import "modules/popup/input.styl"

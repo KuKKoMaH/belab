@@ -1,0 +1,73 @@
+.advantages
+  padding: 100px 0 140px
+  @media (max-width $breakpoint-sm - 1)
+    padding: 50px 0 70px
+
+  &__bg
+    display: block
+    position: absolute
+    background: url(./img.jpg)
+    width: 405px
+    height: 662px
+    top: 50%
+    margin-top: -320px
+    left: 50%
+    margin-left: -740px
+    border-radius: 0
+
+  &:before, &:after
+    content:''
+    background: #fff
+
+  &__title
+    margin-bottom: 70px
+    position: relative
+    z-index: 1
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 40px
+
+  &__items
+    margin-left: calc(50% - 250px)
+    position: relative
+    z-index: 1
+    @media (max-width $breakpoint-sm - 1)
+      margin-left: 0
+      padding: 0 8px
+
+  &__item
+    margin-bottom: 41px
+    display: flex
+    flex-direction: row
+
+  &__icon
+    width: 40px
+    min-width: 40px
+    margin-right: 21px
+    &:after
+      content: ''
+      display: block
+      margin: 0 auto
+
+    &--1:after
+      background: url(../../img/sprite-advantages-1.svg)
+    &--2:after
+      background: url(../../img/sprite-advantages-2.svg)
+    &--3:after
+      background: url(../../img/sprite-advantages-3.svg)
+    &--4:after
+      background: url(../../img/sprite-advantages-4.svg)
+    &--5:after
+      background: url(../../img/sprite-advantages-5.svg)
+    &--6:after
+      background: url(../../img/sprite-advantages-6.svg)
+
+  &__header
+    font-size: 20px
+    line-height: 23px
+    font-weight: 800
+    margin-bottom: 8px
+
+  &__subheader
+    font-size: 16px
+    line-height: 19px
+    color: #79747c

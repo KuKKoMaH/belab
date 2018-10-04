@@ -1,0 +1,125 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  padding-top: 27px
+  z-index: 3
+  anim()
+  @media (max-width: $breakpoint-sm - 1)
+    padding-top: 8px
+
+  &--fixed
+    position: fixed
+    background: #ffffff
+    padding-top: 8px
+    padding-bottom: 8px
+
+  &__logo
+    background: url(../../img/sprite-logo.svg);
+    margin-right: 50px
+    @media (max-width: $breakpoint-sm - 1)
+      margin-right: 0
+
+  &__menu
+    font-size: 14px
+    color: #79747c
+    max-width: 600px
+    flex: 1
+    white-space: nowrap
+
+    @media (max-width: $breakpoint-sm - 1)
+      font-size: 18px
+      text-align: center
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+      display: flex
+      flex-direction: row
+
+      @media (max-width: $breakpoint-sm - 1)
+        flex-direction: column
+
+    li
+      margin-right: 45px
+      //text-align: center
+      //align-items: stretch
+
+      @media (max-width: $breakpoint-lg - 1)
+        margin-right: 12px
+
+      @media (max-width: $breakpoint-sm - 1)
+        margin-right: 0
+        margin-bottom: 8px
+
+    a
+      display: block
+      border-bottom: 2px solid transparent
+      //padding-bottom: 14px
+      //height: 100%
+      anim()
+
+      //&:hover
+      //  border-bottom: 2px solid $green
+
+  &__menu-item
+    &--button
+      color: #8b24c5
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+  &__menu-btn
+    position: absolute
+    right: 8px
+    top: 8px
+    display: none
+    margin: 0
+    padding: 0
+    border: 0
+    background-color: transparent
+    background: url(../img/sprite-menu.svg)
+    cursor: pointer
+    outline: 0
+
+    @media (max-width: $breakpoint-sm - 1)
+      display: block
+
+  &__menu-close
+    display: none
+    position: absolute
+    right: 8px
+    top: 8px
+    padding: 0
+    margin: 0
+    background-color: transparent
+    border: 0
+    background: url(../img/sprite-close.svg);
+
+    @media (max-width: $breakpoint-sm - 1)
+      display: block
+
+  &__mobile-menu
+    display: flex
+    flex: 1
+    align-items: center
+    //justify-content: space-around
+    flex-wrap: wrap
+    z-index: 100
+
+    @media (max-width: $breakpoint-sm - 1)
+      position: fixed
+      flex-direction: column-reverse
+      justify-content: flex-end
+      padding-top: 70px
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: #fff
+      display: none
+
+      &--active
+        display: flex

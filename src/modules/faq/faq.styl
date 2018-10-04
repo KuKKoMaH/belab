@@ -1,0 +1,51 @@
+.faq
+  padding: 84px 0 150px
+  background: linear-gradient(180deg, #2B2420 0%, #2E1830 100%);
+  @media (max-width $breakpoint-sm - 1)
+    padding: 54px 0 70px
+
+  &__title
+    color: #ffffff
+    margin-bottom: 65px
+
+  &__item
+    background: rgba(#FFFFFF, 0.07)
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    border-radius: 6px
+    margin-bottom: 19px
+
+    &--active
+      &:after
+        background: url(../img/sprite-minus.svg)
+
+  &__question
+    background: #ffffff
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
+    border-radius: 6px
+    padding: 17px 20px
+    font-size: 16px
+    line-height: 19px
+    font-weight: 600
+    cursor: pointer
+
+  &__counter
+    color: #821bbc
+    margin-right: 8px
+
+  &__answer
+    max-height: 0
+    overflow: hidden
+    anim()
+
+  &__text
+    padding: 18px 47px
+    font-size: 16px
+    line-height: 24px
+    color: #cacaca
+
+    @media (max-width $breakpoint-sm - 1)
+      padding: 18px 12px
+
+
+  &__form
+    margin-top: 100px

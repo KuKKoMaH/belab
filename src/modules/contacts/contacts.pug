@@ -1,0 +1,23 @@
+include ../form/form
+#contacts.contacts.convex
+  .c
+    .title.contacts__title Наши контакты
+    .contacts__cols
+      .contacts__col
+        .contacts__contact
+          .contacts__type Телефон
+          .contacts__value +7 (909) 697-71-63
+          .contacts__sub What’sApp / Telegram / Viber
+        .contacts__contact
+          .contacts__type Эл. почта
+          .contacts__value hello@belab.ru
+        .contacts__contact
+          .contacts__type Мы в соц. сетях
+          .contacts__value
+            a.contacts__icon.contacts__icon--vk(href='#')
+            a.contacts__icon.contacts__icon--inst(href='#')
+            a.contacts__icon.contacts__icon--fb(href='#')
+
+      .contacts__col
+        .contacts__subtitle Связаться с нами
+        +form(true)

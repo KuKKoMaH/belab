@@ -1,0 +1,53 @@
+.bonuses
+  padding: 70px 0 120px
+  @media (max-width $breakpoint-sm - 1)
+    padding: 40px 0 40px
+
+  &:after
+    content:''
+    background: #fff
+
+  &__title
+    margin-bottom: 18px
+
+  &__subtitle
+    margin-bottom: 50px
+
+  &__items
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+
+  &__item
+    width: 33%
+    margin-bottom: 45px
+    text-align: center
+    @media (max-width $breakpoint-sm - 1)
+      min-width: 220px
+
+  &__image
+    margin-bottom: 25px
+    position: relative
+
+    &:before, &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+
+    &:before
+      margin-top: 16px
+      margin-left: -65px
+      background: url(../../img/sprite-bonus-1.svg)
+
+    &:after
+      margin-top: 10px
+      margin-left: -95px
+      background: url(../../img/sprite-bonus-2.svg)
+
+  &__text
+    font-size: 16px
+    line-height: 24px
+    color: #79747c

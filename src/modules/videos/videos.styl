@@ -1,0 +1,45 @@
+.videos
+  padding: 60px 0 125px
+  background: linear-gradient(180deg, #2B2420 0%, #2E1830 100%)
+  @media (max-width $breakpoint-sm - 1)
+    padding: 40px 0 60px
+  &:before
+    content:''
+    background: #2B2420
+
+  &__title
+    color: #ffffff
+    margin-bottom: 55px
+
+  &__items
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin-bottom: 85px
+    @media (max-width $breakpoint-sm - 1)
+      flex-direction: column
+      margin-bottom: 40px
+
+  &__item
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 32px
+
+  &__image
+    display: block
+    cursor: pointer
+    margin-bottom: 18px
+    @media (max-width $breakpoint-sm - 1)
+      margin: 0 auto 18px
+
+  &__link
+    font-size: 16px
+    font-weight: 500
+    color: #cf82db
+    text-align: center
+    display: block
+
+    &:hover
+      text-decoration: underline
+
+  &__button
+    text-align: center

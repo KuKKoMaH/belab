@@ -1,0 +1,77 @@
+.slide
+  overflow: hidden
+  padding: 165px 0 160px
+  position: relative
+  //height: 675px
+  background: url(bg.jpg) 50% 50% no-repeat;
+  //background: linear-gradient(180deg, rgba(189, 0, 255, 0.06) 0%, rgba(237, 185, 255, 0.03) 100%);
+  @media (max-width: $breakpoint-md - 1)
+    background-size: cover
+    padding: 120px 0 40px
+
+  @media (max-width: $breakpoint-sm - 1)
+    padding-top: 70px
+
+  .w
+    padding: 0
+    position: relative
+
+    //@media (max-width: $breakpoint)
+    //  display: block
+
+  &__content
+    max-width: 650px
+    @media (max-width: $breakpoint-sm - 1)
+      max-width: none
+      text-align: center
+      padding: 0 8px
+
+  &__title
+    //position: relative
+    font-size: 36px
+    line-height: 46px
+    font-weight: 800
+    margin: 0
+    @media (max-width: $breakpoint-sm - 1)
+      font-size: 24px
+      line-height: 30px
+
+
+  &__subtitle
+    font-size: 30px
+    line-height: 46px
+    font-weight: 500
+    margin: 0 0 20px
+    @media (max-width: $breakpoint-sm - 1)
+      font-size: 20px
+      line-height: 30px
+
+  &__text
+    font-size: 18px
+    color: #79747c
+    font-weight: 400
+    margin: 0 0 58px
+    //margin: 0 0 78px
+    //@media (max-width: $breakpoint-sm)
+    //  font-size: 17px
+    //  margin-bottom: 26px
+
+  &__info
+    display: flex
+    flex-direction: row
+    align-items: center
+    @media (max-width: $breakpoint-sm - 1)
+      flex-direction: column
+
+
+  &__partner
+    margin-left: 57px
+    opacity: .2
+    @media (max-width: $breakpoint-sm - 1)
+      margin-left: 0
+      margin-top: 24px
+
+    &--1
+      background: url(../../img/sprite-partner-1.svg)
+    &--2
+      background: url(../../img/sprite-partner-2.svg)

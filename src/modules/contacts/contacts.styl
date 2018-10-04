@@ -1,0 +1,74 @@
+.contacts
+  padding: 80px 0 120px
+  background: linear-gradient(180deg, #F2F8FF 0%, #FDF4FB 96.09%)
+  @media (max-width $breakpoint-sm - 1)
+    padding: 50px 0 60px
+
+  &:after
+    content:''
+    background: #FDF4FB
+
+
+  &__title
+    margin-bottom: 76px
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 40px
+
+  &__cols
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    @media (max-width $breakpoint-sm - 1)
+      flex-direction: column
+
+  &__col
+    @media (max-width $breakpoint-sm - 1)
+      text-align: center
+
+  &__contact
+    margin-bottom: 39px
+    @media (max-width $breakpoint-sm - 1)
+      margin-bottom: 20px
+
+  &__type
+    font-size: 14px
+    font-weight: 600
+    color: #7c16b6
+    margin-bottom: 5px
+
+  &__value
+    font-size: 20px
+
+  &__sub
+    font-size: 16px
+    color: #79747c
+
+  &__icon
+    display: inline-block
+    vertical-align: middle
+    margin-right: 39px
+    &:last-child
+      margin-right: 0
+
+    &--vk
+      background: url(../../img/sprite-vk.svg)
+    &--inst
+      background: url(../../img/sprite-inst.svg)
+    &--fb
+      background: url(../../img/sprite-fb.svg)
+
+  &__subtitle
+    font-size: 26px
+    font-weight: 800
+    margin-bottom: 27px
+
+  .form
+    text-align: left
+    @media (max-width $breakpoint-sm - 1)
+      text-align: center
+  .form__form
+    margin-left: 0
+    margin-right: 0
+    @media (max-width $breakpoint-sm - 1)
+      margin-left: auto
+      margin-right: auto

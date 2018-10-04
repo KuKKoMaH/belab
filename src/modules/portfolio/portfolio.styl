@@ -1,0 +1,80 @@
+.portfolio
+  padding: 85px 0 120px
+  background: linear-gradient(180deg, #F2F8FF 0%, #FDF4FB 98.61%)
+  overflow: hidden
+
+  @media (max-width $breakpoint-sm - 1)
+    padding: 45px 0 50px
+
+  &:after
+    content:''
+    background: #fff4fb
+
+  &__title
+    font-size: 36px
+    font-weight: 800
+    margin-bottom: 65px
+    @media (max-width $breakpoint-sm - 1)
+      font-size: 24px
+      line-height: 1.35
+      margin-bottom: 35px
+
+  .owl-stage-outer
+    overflow: visible
+
+  &__items
+    margin-bottom: 70px
+    position: relative
+
+  &__item
+    width: 270px
+    text-align: center
+
+  &__image
+    margin-bottom: 16px
+
+  .owl-item img
+    border-radius: 50%
+    overflow: hidden
+    width: auto
+    margin: 0 auto
+    display: block
+
+  &__name
+    font-size: 16px
+    color: #79747
+    margin-bottom: 8px
+
+  &__link
+    font-size: 16px
+    font-weight: 500
+    color: #cf82db
+
+    &:hover
+      text-decoration: underline
+
+  .owl-carousel
+    button.owl-prev, button.owl-next
+      position: absolute
+      bottom: 100%
+      margin-bottom: 82px
+      right: 0
+      outline: 0
+      @media (max-width $breakpoint-sm - 1)
+        margin-bottom: 42px
+        right: -23px
+
+    button.owl-prev
+      margin-right: 70px
+      background: url(../../img/sprite-arrow-left.svg)
+      &:hover
+        background: url(../../img/sprite-arrow-left-active.svg)
+
+    button.owl-next
+      margin-right: 30px
+      background: url(../../img/sprite-arrow-right.svg)
+      &:hover
+        background: url(../../img/sprite-arrow-right-active.svg)
+
+  &__button
+    text-align: center
