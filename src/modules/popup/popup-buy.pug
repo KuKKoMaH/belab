@@ -1,8 +1,11 @@
 include popup
 
-+popup('callback', 'Обратный звонок', 'Мы перезвоним вам в течение 5 минут')
++popup('buy', '10 фатальных ошибок в макияже', 'Оставьте заявку прямо сейчас и узнайте\nкак избежать 10 основных ошибок при макияже')
   form.form
     .form__form
+      .input
+        .input__label ЭЛ. ПОЧТА #[span.input__required *]
+        input.input__input(type='email' placeholder='example@mail.ru')
       .input
         .input__label ТЕЛЕФОН #[span.input__required *]
         input.input__input(type='tel' placeholder='+7 (___) ___-__-__')
