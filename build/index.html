@@ -22,7 +22,7 @@
               <li><a href="#programs">Цены</a></li>
               <li><a href="#">Отзывы</a></li>
               <li><a href="#portfolio">Портфолио</a></li>
-              <li><a class="header__menu-item--button popup__opener" href="#callback">Заказать звонок</a></li>
+              <li><a class="header__menu-item--button" href="#callback">Заказать звонок</a></li>
             </ul>
           </div>
         </div>
@@ -47,35 +47,35 @@
       <div class="w">
         <div class="bullets__items">
           <div class="bullets__item bullets__item--1">
-            <div class="bullets__header">Разбираться<br>в косметике и кистях</div>
+            <div class="bullets__header">Разбираться<br> в косметике и кистях</div>
             <div class="bullets__text">И перестанете тратить лишние деньги в магазинах на ненужную косметику</div>
           </div>
           <div class="bullets__item bullets__item--2">
-            <div class="bullets__header">Правильно ухаживать<br>за кожей</div>
+            <div class="bullets__header">Правильно ухаживать<br> за кожей</div>
             <div class="bullets__text">Вы научитесь скрывать недостатки и убирать усталость с лица</div>
           </div>
           <div class="bullets__item bullets__item--3">
-            <div class="bullets__header">Рисовать<br>идеальные брови</div>
+            <div class="bullets__header">Рисовать<br> идеальные брови</div>
             <div class="bullets__text">Вы научитесь рисовать брови соответствующие вашей форме лица</div>
           </div>
           <div class="bullets__item bullets__item--4">
-            <div class="bullets__header">Делать утренний<br>макияж за 15 минут</div>
+            <div class="bullets__header">Делать утренний<br> макияж за 15 минут</div>
             <div class="bullets__text">Техники полученные на обучении позволят делать вам макияж за 15 минут</div>
           </div>
           <div class="bullets__item bullets__item--5">
-            <div class="bullets__header">Делать макияж<br>для любой формы глаз</div>
+            <div class="bullets__header">Делать макияж<br> для любой формы глаз</div>
             <div class="bullets__text">И для нависшего века, уменьшить нос, нарисовать скулы, а также уберете щеки и второй подбородок</div>
           </div>
           <div class="bullets__item bullets__item--6">
-            <div class="bullets__header">Красить себя<br>на любую встречу</div>
+            <div class="bullets__header">Красить себя<br> на любую встречу</div>
             <div class="bullets__text">И вечеринку, освоите модную технику “Смоки айс” и научитесь рисовать ровные стрелки а также клеить пучки</div>
           </div>
           <div class="bullets__item bullets__item--7">
-            <div class="bullets__header">Найдете подходящую<br>для вас красную помаду</div>
+            <div class="bullets__header">Найдете подходящую<br> для вас красную помаду</div>
             <div class="bullets__text">Сделаете объем губ больше и научитесь разбираться в цветах</div>
           </div>
           <div class="bullets__item bullets__item--8">
-            <div class="bullets__header">Делать красивые<br>фото на телефон</div>
+            <div class="bullets__header">Делать красивые<br> фото на телефон</div>
             <div class="bullets__text">Которые вы сможете выкладывать в Instagram и другие соц. сети</div>
           </div>
         </div>
@@ -233,9 +233,7 @@
             <div class="learn__text">Вы получаете доступ к закрытому чату в WhatsApp, где можете общаться <span class="highlight">с другими участниками</span> и задавать вопросы.</div>
           </div>
         </div>
-        <div class="learn__button">
-          <button class="btn">Получить консультацию по обучению</button>
-        </div>
+        <div class="learn__button"><a class="btn" href="#callback">Получить консультацию по обучению</a></div>
       </div>
     </div>
     <div class="videos convex" id="videos">
@@ -565,24 +563,20 @@
           </div>
           <div class="contacts__col">
             <div class="contacts__subtitle">Связаться с нами</div>
-                <form class="form">
-                  <div class="form__form">
-                    <div class="input">
-                      <div class="input__label">ЭЛ. ПОЧТА <span class="input__required">*</span></div>
-                      <input class="input__input" type="email" placeholder="example@mail.ru">
-                    </div>
-                    <div class="input">
-                      <div class="input__label">ТЕЛЕФОН <span class="input__required">*</span></div>
-                      <input class="input__input" type="tel" placeholder="+7 (___) ___-__-__">
-                    </div>
-                    <div class="form__button">
-                      <button class="btn btn--block">Задать вопрос</button>
-                    </div>
-                  </div>
-                  <div class="form__sub">Нажимая на кнопку, вы принимаете <a href="#">Положение</a><br>
-                    и даете <a href="#">Согласие</a> на обработку персональных данных.
-                  </div>
-                </form>
+            <form class="form" id="callback">
+              <div class="form__form">
+                <div class="input">
+                  <div class="input__label">ТЕЛЕФОН <span class="input__required">*</span></div>
+                  <input class="input__input" type="tel" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form__button">
+                  <button class="btn btn--block">Заказать звонок</button>
+                </div>
+              </div>
+              <div class="form__sub">Нажимая на кнопку, вы принимаете <a href="#">Положение</a><br>
+                и даете <a href="#">Согласие</a> на обработку персональных данных.
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -600,34 +594,17 @@
             Банк АО «Тинькофф Банк» Р.С.40802810300000455963
           </div>
         </div>
-        <div class="footer__right"><a class="btn" href="#callback">Заказать звонок</a><br><a class="footer__polytic" href="#">Политика конфиденциальности</a></div>
+        <div class="footer__right">
+          <!--a.btn.popup__opener(href='#callback') Заказать звонок-->
+          <!--br--><a class="footer__polytic" href="#">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
     <div class="hidden">
-            <div class="popup__wrapper" id="callback">
-              <div class="title popup__title">Обратный звонок</div>
-              <div class="subtitle popup__subtitle">Мы перезвоним вам в течение 5 минут</div>
-              <div class="popup__body">
-                <form class="form">
-                  <div class="form__form">
-                    <div class="input">
-                      <div class="input__label">ТЕЛЕФОН <span class="input__required">*</span></div>
-                      <input class="input__input" type="tel" placeholder="+7 (___) ___-__-__">
-                    </div>
-                    <div class="form__button">
-                      <button class="btn btn--block">Заказать звонок</button>
-                    </div>
-                  </div>
-                  <div class="form__sub">Нажимая на кнопку, вы принимаете <a href="#">Положение</a><br>
-                    и даете <a href="#">Согласие</a> на обработку персональных данных.
-                  </div>
-                </form>
-              </div>
-            </div>
+      <!--include modules/popup/popup-callback-->
             <div class="popup__wrapper" id="buy">
-              <div class="title popup__title">10 фатальных ошибок в макияже</div>
-              <div class="subtitle popup__subtitle">Оставьте заявку прямо сейчас и узнайте
-как избежать 10 основных ошибок при макияже</div>
+              <div class="title popup__title">Вы выбрали комплект</div>
+              <div class="subtitle popup__subtitle">Введите свои данные ниже, нажмите на кнопку, чтобы забронировать место на курсе</div>
               <div class="popup__body">
                 <form class="form">
                   <div class="form__form">
@@ -640,7 +617,7 @@
                       <input class="input__input" type="tel" placeholder="+7 (___) ___-__-__">
                     </div>
                     <div class="form__button">
-                      <button class="btn btn--block">Отправить заявку</button>
+                      <button class="btn btn--block">Забронировать место</button>
                     </div>
                   </div>
                   <div class="form__sub">Нажимая на кнопку, вы принимаете <a href="#">Положение</a><br>
