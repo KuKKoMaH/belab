@@ -6,6 +6,7 @@ import 'jquery.maskedinput/src/jquery.maskedinput';
 
 import './modules/header/header';
 import './modules/portfolio/portfolio';
+import './modules/programs/programs';
 
 import './modules/form/form';
 import './modules/faq/faq';
