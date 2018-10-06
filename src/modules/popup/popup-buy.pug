@@ -11,5 +11,5 @@ include popup
         input.input__input(type='tel' placeholder='+7 (___) ___-__-__')
       .form__button: button.btn.btn--block Забронировать место
     .form__sub
-      | Нажимая на кнопку, вы принимаете #[a(href='#') Положение]#[br]
-      | и даете #[a(href='#') Согласие] на обработку персональных данных.
+      | Нажимая на кнопку, вы принимаете #[a.popup__opener(href='#regulation') Положение]#[br]
+      | и даете #[a.popup__opener(href='#consent') Согласие] на обработку персональных данных.
