@@ -1,14 +1,24 @@
 include popup
 
 +popup('buy', 'Вы выбрали комплект', 'Введите свои данные ниже, нажмите на кнопку, чтобы забронировать место на курсе')
-  form.form
+  form.form#payForm(name="TinkoffPayForm" novalidate)
+    input(сlass="tinkoffPayRow" type="hidden" name="terminalkey" value="1538511370057")
+    input(class="tinkoffPayRow" type="hidden" name="frame" value="false")
+    input(class="tinkoffPayRow" type="hidden" name="language" value="ru")
+    input#amount(class="tinkoffPayRow" type="hidden"  name="amount")
     .form__form
-      .input
+      .input#payName
+        .input__label ИМЯ #[span.input__required *]
+        input.input__input(type='text' name='name')
+        .input__error
+      .input#payEmail
         .input__label ЭЛ. ПОЧТА #[span.input__required *]
-        input.input__input(type='email' placeholder='example@mail.ru')
-      .input
+        input.input__input(type='email' name='email' placeholder='example@mail.ru')
+        .input__error
+      .input#payPhone
         .input__label ТЕЛЕФОН #[span.input__required *]
-        input.input__input(type='tel' placeholder='+7 (___) ___-__-__')
+        input.input__input(type='tel' name='phone' placeholder='+7 (___) ___-__-__')
+        .input__error
       .form__button: button.btn.btn--block Забронировать место
     .form__sub
       | Нажимая на кнопку, вы принимаете #[a.popup__opener(href='#regulation') Положение]#[br]

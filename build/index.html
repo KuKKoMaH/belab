@@ -315,12 +315,12 @@
             <div class="programs__price">2 500 ₽</div>
             <div class="programs__oldprice"><span class="highlight">Экономия 4 500 ₽</span><br>Старая цена 7 000 ₽</div>
             <div class="programs__button">
-              <button class="btn" data-title="Стандарт">Купить</button>
+              <button class="btn" data-title="Стандарт" data-amount="2500">Купить</button>
             </div>
           </div>
           <div class="programs__item">
             <div class="programs__subheader">ПАКЕТ</div>
-            <div class="programs__header">Премиум</div>
+            <div class="programs__header">Вип</div>
             <div class="programs__bullets">
               <div class="programs__bullet">Занятие 1 "Идеальная косметичка"</div>
               <div class="programs__bullet">Занятие 2 "Анализ типов кожи. Дневной макияж | НЮД"</div>
@@ -337,12 +337,12 @@
             <div class="programs__price">7 000 ₽</div>
             <div class="programs__oldprice"><span class="highlight">Экономия 8 000 ₽</span><br>Старая цена 15 000 ₽</div>
             <div class="programs__button">
-              <button class="btn" data-title="Премиум">Купить</button>
+              <button class="btn" data-title="Вип" data-amount="7000">Купить</button>
             </div>
           </div>
           <div class="programs__item">
             <div class="programs__subheader">ПАКЕТ</div>
-            <div class="programs__header">Вип</div>
+            <div class="programs__header">Премиум</div>
             <div class="programs__bullets">
               <div class="programs__bullet">Занятие 1 "Идеальная косметичка"</div>
               <div class="programs__bullet">Занятие 2 "Анализ типов кожи. Дневной макияж | НЮД"</div>
@@ -363,7 +363,7 @@
               <div class="programs__oldprice"><span class="highlight">Экономия 30 000 ₽</span><br>Старая цена 100 000 ₽</div>
             </div>
             <div class="programs__button">
-              <button class="btn" data-title="Вип">Купить</button>
+              <button class="btn" data-title="Премиум" data-amount="80000">Купить</button>
             </div>
           </div>
         </div>
@@ -641,15 +641,26 @@
               <div class="title popup__title">Вы выбрали комплект</div>
               <div class="subtitle popup__subtitle">Введите свои данные ниже, нажмите на кнопку, чтобы забронировать место на курсе</div>
               <div class="popup__body">
-                <form class="form">
+                <form class="form" id="payForm" name="TinkoffPayForm" novalidate="">
+                  <input сlass="tinkoffPayRow" type="hidden" name="terminalkey" value="1538511370057">
+                  <input class="tinkoffPayRow" type="hidden" name="frame" value="false">
+                  <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+                  <input class="tinkoffPayRow" id="amount" type="hidden" name="amount">
                   <div class="form__form">
-                    <div class="input">
-                      <div class="input__label">ЭЛ. ПОЧТА <span class="input__required">*</span></div>
-                      <input class="input__input" type="email" placeholder="example@mail.ru">
+                    <div class="input" id="payName">
+                      <div class="input__label">ИМЯ <span class="input__required">*</span></div>
+                      <input class="input__input" type="text" name="name">
+                      <div class="input__error"></div>
                     </div>
-                    <div class="input">
+                    <div class="input" id="payEmail">
+                      <div class="input__label">ЭЛ. ПОЧТА <span class="input__required">*</span></div>
+                      <input class="input__input" type="email" name="email" placeholder="example@mail.ru">
+                      <div class="input__error"></div>
+                    </div>
+                    <div class="input" id="payPhone">
                       <div class="input__label">ТЕЛЕФОН <span class="input__required">*</span></div>
-                      <input class="input__input" type="tel" placeholder="+7 (___) ___-__-__">
+                      <input class="input__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                      <div class="input__error"></div>
                     </div>
                     <div class="form__button">
                       <button class="btn btn--block">Забронировать место</button>
@@ -877,4 +888,5 @@
     </div>
   </body>
   <script src="js/app.js"></script>
+  <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
 </html>
